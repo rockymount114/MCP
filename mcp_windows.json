@@ -1,0 +1,40 @@
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "github": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery-ai/github",
+        "--config",
+        "\"{\\\"githubPersonalAccessToken\\\":\\\"GITHUB_KEY\\\"}\""
+      ]
+    },
+    "filesystem": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@cheny-alf/filesystem-server",
+        "--config",
+        "\"{\\\"allowedDirectory\\\":\\\"C:\\\\\\\\Users\\\\\\\\Li\\\\\\\\Desktop\\\\\\\\temp\\\"}\""
+      ]
+    }
+  }
+}
+
